@@ -1,0 +1,18 @@
+git lfs track "*.psd"
+git lfs track "*.png"
+git lfs track "*.jpg"
+git lfs track "*.jpeg"
+git lfs track "*.tga"
+git lfs track "*.tif"
+git lfs track "*.tiff"
+
+git lfs track "*.fbx"
+git lfs track "*.anim"
+git lfs track "*.controller"
+git lfs track "*.wav"
+git lfs track "*.mp3"
+git lfs track "*.ogg"
+
+git lfs track "*.exr"
+git lfs track "*.hdr"
+git lfs track "*.mp4"
