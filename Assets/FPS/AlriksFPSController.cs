@@ -20,7 +20,7 @@ public class AlriksFPSController : MonoBehaviour
     public float sprintFOV = 150f;
     public float scopeFOV = 10f;
     public float fovLerpSpeed = 3f;
-    private Camera cam;
+    //private Camera cam;
     float currentTargetFOV;
 
 
@@ -40,30 +40,6 @@ public class AlriksFPSController : MonoBehaviour
    // public CinemachineVirtualCamera vcam;  // gammal
     public CinemachineCamera ccam;
 
-    /*void Start()
-    {
-        if (vCam == null)
-            vCam = GetComponent<CinemachineCamera>();
-
-        var lens = vCam.m_Lens;
-        lens.FieldOfView = normalFOV;
-        vCam.m_Lens = lens;
-    }
-
-    void Update()
-    {
-        bool isSprinting = Keyboard.current.leftShiftKey.isPressed; // byt till din egen flagga vid behov
-
-        float targetFov = isSprinting ? sprintFOV : normalFOV;
-
-        var lens = vCam.m_Lens;
-        lens.FieldOfView = Mathf.Lerp(
-            lens.FieldOfView,
-            targetFov,
-            Time.deltaTime * fovLerpSpeed
-        );
-        vCam.m_Lens = lens;
-    }*/
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -71,8 +47,8 @@ public class AlriksFPSController : MonoBehaviour
         Cursor.visible = false;
 
     
-        if (cam == null)
-            cam = GameObject.FindAnyObjectByType<Camera>();
+      //  if (playerCamera == null)
+      //      playerCamera = GameObject.FindAnyObjectByType<Camera>();  // ??
 
   
         isCinemachine = GameObject.FindAnyObjectByType<CinemachineCamera>();
@@ -81,19 +57,13 @@ public class AlriksFPSController : MonoBehaviour
         {
             ccam = GameObject.FindAnyObjectByType<CinemachineCamera>().GetComponent<CinemachineCamera>();
             currentTargetFOV = normalFOV;
-            // var lens = ccam.Lens;
-            // lens.FieldOfView = normalFOV;
-            // ccam.Lens = lens;
-
             ccam.Lens.FieldOfView = normalFOV;
-
-
         }
         else
         {
             playerCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
             currentTargetFOV = normalFOV;
-            cam.fieldOfView = normalFOV;
+            playerCamera.fieldOfView = normalFOV;
         }
     }
 
@@ -122,9 +92,9 @@ public class AlriksFPSController : MonoBehaviour
             currentTargetFOV = isScoped ? scopeFOV : normalFOV;
 
             if (isCinemachine)
-                cam.fieldOfView = currentTargetFOV;
-           else
-                cam.fieldOfView = currentTargetFOV;
+                ccam.Lens.FieldOfView = currentTargetFOV;
+            else
+                playerCamera.fieldOfView = currentTargetFOV;
            
         }
 
@@ -164,16 +134,15 @@ public class AlriksFPSController : MonoBehaviour
         }
         #endregion
 
-   
-  
-  
-       //if(cam.fieldOfView >= currentTargetFOV - 0.01f && cam.fieldOfView <= currentTargetFOV + 0.01f)
-       if(isCinemachine)
-            ccam.Lens.FieldOfView = Mathf.Lerp(ccam.Lens.FieldOfView, currentTargetFOV, Time.deltaTime * fovLerpSpeed);
-        else
-            cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, currentTargetFOV, Time.deltaTime * fovLerpSpeed);
-      
+        #region Lerp FOV
 
+        //if(cam.fieldOfView >= currentTargetFOV - 0.01f && cam.fieldOfView <= currentTargetFOV + 0.01f)
+        if (isCinemachine)
+            ccam.Lens.FieldOfView = Mathf.Lerp(ccam.Lens.FieldOfView, currentTargetFOV, Time.deltaTime * fovLerpSpeed);
+       else
+            playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, currentTargetFOV, Time.deltaTime * fovLerpSpeed);
+
+        #endregion
 
     }
 }
