@@ -1116,11 +1116,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4576193471980866943, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
   m_PrefabInstance: {fileID: 7720185348272441473}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &1234178486 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 971342680752396704, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
-  m_PrefabInstance: {fileID: 7720185348272441473}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1234178487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,12 +2177,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: runSpeed
-      value: 30
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: scopeFOV
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: sprintFOV
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: playerCamera
       value: 
-      objectReference: {fileID: 1234178486}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: m_EditorClassIdentifier
+      value: Assembly-CSharp::AlriksFPSController
+      objectReference: {fileID: 0}
     - target: {fileID: 7327127008032224610, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_Name
       value: Player

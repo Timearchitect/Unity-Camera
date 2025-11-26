@@ -526,7 +526,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649747030}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 98df7df99e69e8649a2ad7f2fb868411, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -565,7 +565,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 5d570d58dddbc3c4591b8aebebfd9322, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -677,7 +677,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 5d570d58dddbc3c4591b8aebebfd9322, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1653,7 +1653,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926344251}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 98df7df99e69e8649a2ad7f2fb868411, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1692,7 +1692,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 5d570d58dddbc3c4591b8aebebfd9322, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1839,7 +1839,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013173434}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 98df7df99e69e8649a2ad7f2fb868411, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1878,7 +1878,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 5d570d58dddbc3c4591b8aebebfd9322, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2101,6 +2101,10 @@ PrefabInstance:
     - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: runSpeed
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: scopeFOV
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: normalFOV
