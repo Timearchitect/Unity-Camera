@@ -33,14 +33,14 @@ public class inventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             onInventory = !onInventory;
-            if (pauseOnInventory)
+            if (pauseOnInventory) //pause game inte UI eller input
                 Time.timeScale = Time.timeScale==1 ? 0 : 1;
 
 
             if (isCinemachine) // Cinemachin cut controls
             {
-                ccam.GetComponent<CinemachineInputAxisController>().enabled = !onInventory;
-                ccam.GetComponent<CinemachineBasicMultiChannelPerlin>().enabled = !onInventory;
+                ccam.GetComponent<CinemachineInputAxisController>().enabled = !onInventory;  //input cinemachine
+                ccam.GetComponent<CinemachineBasicMultiChannelPerlin>().enabled = !onInventory; //headbob
             }
             else  // Camera cut controls
             {

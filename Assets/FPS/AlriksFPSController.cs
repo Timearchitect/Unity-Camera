@@ -209,7 +209,7 @@ public class AlriksFPSController : MonoBehaviour
             Debug.LogWarning("PICKUP!!!!!!");
             pickupObject = go;
             pickupObject.transform.SetParent(transform);
-            pickupObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            pickupObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             isHoldingPickup = true;
             // Destroy(go);
         }
