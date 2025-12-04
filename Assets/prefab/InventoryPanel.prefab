@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 8029713060177944774}
   - component: {fileID: 5252730075546992578}
   - component: {fileID: 8659528885223777015}
+  - component: {fileID: 6460355447699138432}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -136,7 +137,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3038050166301073803}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -188,6 +189,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6460355447699138432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3038050166301073803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62efb80450579ca4f8673793a4943b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  inventory: []
 --- !u!1 &7952077602217765827
 GameObject:
   m_ObjectHideFlags: 0

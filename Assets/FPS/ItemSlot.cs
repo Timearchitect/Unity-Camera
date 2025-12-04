@@ -7,20 +7,30 @@ public class ItemSlot : MonoBehaviour
     public GameObject item;
     public Image img;
     public TextMeshPro tmpro;
+    public Button btn;
     
     private void Start()
     {
-        img = gameObject.GetComponent<Image>();
-        tmpro = gameObject.GetComponent<TextMeshPro>();
+
+
+        if(!img )  img = GetComponent<Image>();
+        if (!btn)  btn = GetComponent<Button>();
+        btn.onClick.AddListener(  () => GetItem() );
+        tmpro = GetComponent<TextMeshPro>();
+
     }
 
     public void SetItem(GameObject _item)
     {
         item = _item;
+
     }
 
-    public GameObject GetItem()
+    public void GetItem()
     {
-        return item;
+        if (item) Debug.LogWarning("Null item stored");
+        else Debug.Log("Received item from inventory!!");
+      
     }
+
 }

@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+
 [RequireComponent(typeof(CharacterController))]
 public class AlriksFPSController : MonoBehaviour
 {
@@ -41,9 +42,8 @@ public class AlriksFPSController : MonoBehaviour
 
     Vector3 moveDirection = Vector3.zero;
     float rotationY = 0;
-
-    public bool canMove = true;
-    public bool isRunning, isScoped,isCinemachine, isHoldingPickup;
+    //[HideInInspector]
+    public bool canMove,isRunning, isScoped,isCinemachine, isHoldingPickup;
 
 
     CharacterController characterController;
@@ -213,5 +213,11 @@ public class AlriksFPSController : MonoBehaviour
             isHoldingPickup = true;
             // Destroy(go);
         }
+    }
+
+    [ContextMenu("reset position")]   
+    public void Reset()
+    {
+        transform.position = Vector3.zero;
     }
 }

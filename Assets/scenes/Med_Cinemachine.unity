@@ -707,11 +707,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &465981963 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3038050166301073803, guid: 57fdedf6865aa54468eedb05d0b63b15, type: 3}
-  m_PrefabInstance: {fileID: 1107390046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &588730837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,7 +1949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029713060177944774, guid: 57fdedf6865aa54468eedb05d0b63b15, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8029713060177944774, guid: 57fdedf6865aa54468eedb05d0b63b15, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3124,7 +3119,7 @@ Transform:
   m_GameObject: {fileID: 1823745999}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -262, y: 0, z: -293}
+  m_LocalPosition: {x: -64, y: 0, z: -37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3732,7 +3727,7 @@ Transform:
   m_GameObject: {fileID: 1976073027}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.77168, y: 1.997, z: -0.24081}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4094,15 +4089,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2190795848407234106, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.77168
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2190795848407234106, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.997
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2190795848407234106, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.24081
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2190795848407234106, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4132,14 +4127,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: canMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: isScoped
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7188672399676549214, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: isRunning
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7327127008032224610, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: duration
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
       propertyPath: inventoryUI
       value: 
-      objectReference: {fileID: 465981963}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: onInventory
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[0].inSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[1].inSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[0].outSlope
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[1].outSlope
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[0].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134510897139603672, guid: ddbc054b66bc0e948b0020b434e5db34, type: 3}
+      propertyPath: openAnimationEase.m_Curve.Array.data[1].tangentMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
